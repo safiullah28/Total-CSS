@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*    (  *  =  Universal selector) */
+        
+        /* Descendant Selector */
+        .box h1{
+            color: blue;
+        }
+        p span{
+            color: brown;
+        }
+
+        /* Direct Child Selector */
+        
+        /* #list li{
+            color:red;
+        }
+        #list > li{
+            color: blue;
+        } */
+        /* Adjacent Sibling Selector */
+        ul+p{
+            color: brown;
+        }
+        /* Generalize Sibling Selector = Only target next siblings not children or grand children*/
+        ul~p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><h1>Hy my name is Safiullah</h1></div>
+    <p>Lorem, ipsum dolor <span>sit amet consectetur adipisicing elit. </span>Accusantium quas ipsum natus beatae error minus, quasi odit ducimus laboriosam nulla.</p>
+    <!-- <ul id="list">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, fugit?</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>lorem5</li>
+        <li>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+     -->
+     <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+     </ul>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, voluptatum!</p>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, hic.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, hic.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, hic.</p>
+</body>
+</html>

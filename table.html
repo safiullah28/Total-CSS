@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style type="text/css">
+        table{
+            /* border-spacing: rows columns; */
+            border-spacing: 10px;
+            border-collapse:collapse;
+            empty-cells: hide;
+            width: 300px;
+            table-layout: auto;
+        }
+        table,td,th {
+            border: 1px solid black;
+        }
+        td,th{
+            vertical-align:middle;
+            padding: 20px;
+        }
+        caption{
+            caption-side: bottom;
+        }
+        tr:hover{
+            background: lightblue;
+        }
+        tr:nth-child(even){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>This is table</caption>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Savings</th>
+    </tr>
+        <tr>
+            <td>Safi Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quisquam beatae quasi tenetur quia</td>
+            <td>Ullah</td>
+            <td>100$</td>
+        </tr>
+        <tr>
+            <td>Abdullah</td>
+            <td>Qaiser</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Saleha</td>
+            <td>Shahid</td>
+            <td>25$</td>
+        </tr>
+        <tr>
+            <td>Esha</td>
+            <td>Shafqat</td>
+            <td>12.5$</td>
+        </tr>
+    </table>
+</body>
+</html>

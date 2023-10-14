@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img[title]{
+            border: 3px solid black;
+        }
+        input[type]{
+            border: 3px solid red;
+        }
+        a[target]{
+            color: aquamarine;
+        }
+        input[type="text"]{
+            width: 100px;
+        }
+        /* img[alt="Bhalu"]{
+            width: 30%;
+        } */
+
+        /* ^ = Value Starting with  */
+        /* img[alt^="Bhalu"]{
+            width: 25%;
+        } */
+
+        /* $= Value end at  */
+        /* img[alt$="img"]{
+            width: 30%;
+        }*/
+        
+        /* a[href$=".png"]{ 
+            color: chocolate;
+        } */
+
+        /* * = Value only exist at anywhere*/
+        /* img[alt*=ki]{
+            width: 40%;
+        }
+         */
+
+        /* ~ = Value has Space before and after it */
+        img[alt~= "ki"]{
+            width: 50%;
+        }
+        img[alt~= "img"]{
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <img src="./258777397_1012261519725438_5661981446053997555_n.jpg" alt="Bhaluki img">
+    <p>Lorem <a href="a.png" target="_blank">ipsum dolor</a> sit amet consectetur adipisicing elit. <a href="">Maiores quia </a>magnam assumenda accusamus asperiores illo a porro nam repellendus impedit, quam numquam consequatur! In necessitatibus repudiandae tempora, aliquam ad beatae provident expedita quibusdam, hic doloremque corrupti, minus quos porro optio.</p>
+    <img src="./MOUNTAIN.png" title="MOUNTAIN">
+    <form >
+        <label for="Name">Name</label>
+        <input type="text" name="" id="" placeholder="Name">
+        <br><br>
+        <label for="">Gender</label>
+        <input type="radio" placeholder="Gender" name="Gender" value="M">
+        <label for="M">Male</label>
+        <input type="radio" placeholder="Gender" name="Gender" value="F">
+        <label for="M">Female</label>
+        <br><br>
+        <label for="Add">Address</label>
+        <input type="text" placeholder="Address">
+    </form>
+</body>
+</html>

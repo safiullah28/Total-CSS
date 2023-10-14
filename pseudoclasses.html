@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* li:first-child{
+            color: red;
+        } */
+        /* li:last-child{
+            color: red;
+        } */
+        /* .one1 li:first-child{
+            color: aqua;
+        } */
+        /* li:nth-child(3n){
+            color: blue;
+        }*/
+        /* li:nth-last-child(2n){
+            color: blueviolet;
+        } */
+        /* p:nth-of-type(2n){
+            color: brown;
+        } */
+        /* p:lang(en){
+            color: blue;
+        }
+        p:lang(fr){
+            color: brown;
+        } */
+        /* ul a{
+            color: red;
+        }
+        ul a:hover{
+            color: darkred;
+        }
+        ul a:visited{
+            color: palevioletred;
+        }
+        ul a:active{
+            color: blue;
+        } */
+        /* p:target{
+            background-color: gold ;
+        } */
+/* 
+        input:focus{
+            border: 3px solid blue;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 3px 3px 4px blue;
+        }
+        input[type="radio"]:checked+label{
+            color: brown;
+        }
+        input[type="text"]:enabled{
+            border: 3px solid crimson;
+        }
+        input:required{
+            border: 2px solid green;
+            background: lime;
+        }
+        input:optional{
+            box-shadow: 2px 2px 10px grey;
+
+        }
+        input:in-range{
+            border: 1px solid ;
+        }
+        input:out-of-range{
+            border: 1px solid red;
+        }
+        input:read-only{
+
+        } */
+        /* input:invalid{
+            border: 1px solid red;
+            background-color: burlywood;
+        } */
+        /* input:default{
+            box-shadow: 1px 1px 2px 2px black;
+        }
+        option:default{
+            color: red;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- <ul class="one1">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <ul class="two">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing</p>
+
+    <p lang="en">Lorem ipsum dolor sit amet.</p>
+    <p lang="fr">Lorem, ipsum dolor.</p> -->
+<!-- 
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul> -->
+    <!-- <ul>
+        <li><a href="#html">HTML</a></li>
+        <li><a href="#css">CSS</a></li>
+        <li><a href="#js">Javascript</a></li>
+    </ul>
+    <p id="html">HTML is hypertext markup language</p>
+    <p id="css">CSS is a CAscading style Sheets</p>
+    <p id="js">Javascript is used to power HTML and CSS</p> -->
+
+    <form >
+        <label for="FN">First Name</label>
+        <input type="text" name="FN"  placeholder="First Name" required >
+        <br><br>
+        <label for="LN">Last Name</label>
+        <input type="text" name="LN" placeholder="Last Name" disabled readonly>
+        <br><br>
+        <label for="Age">Age</label>
+        <input type="number" name="Age" placeholder="Age" min="10" max="20">
+        <br><br>
+        <label for="Em">Email</label>
+        <input type="email" name="Em" placeholder="someone@example.com" required>
+        <br><br>
+        <label for="Hobbies">Your Hobbies : </label>
+        <input type="checkbox" name="Hobbies" value="Sports" placeholder="Hobbies" checked>
+        <span>Sports</span>
+        <input type="checkbox" name="Hobbies" value="Music" placeholder="Music">
+        <span>Music</span>
+        <input type="checkbox" name="Hobbies" value="Travel" placeholder="Travel">
+        <span>Travel</span>
+        <input type="checkbox" name="Hobbies" value="Books Reading" placeholder="Books Reading">
+        <span>Books Reading</span>
+        <br><br>
+        <label for="Gen">Gender : </label>
+        <input type="radio" name="Gender" value="M" placeholder="M">
+        <label for="Male">Male</label>
+        <input type="radio" name="Gender" value="F" placeholder="F">
+        <label for="Male">Female</label>
+        <br><br>
+        <label for="Country">Your Country : </label>
+            <select name="Country" >
+                <option value="none">Select</option>
+                <option value="india">India</option>
+                <option value="pak" selected>Pakistan</option>
+                <option value="iran">Iran</option>
+                <option value="afg">Afghanistan</option>
+            </select>
+        <button type="submit">Submit</button>
+    </form>
+
+    
+</body>
+</html>

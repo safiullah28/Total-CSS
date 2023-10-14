@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        counter-reset: my-counter 0;
+    }
+    h2::before{
+        content: "Chapter " counter(my-counter) " : ";
+        counter-increment: my-counter 5;
+        color: brown;
+    }
+    p{
+        font-size: 40px;
+    }
+    p::before{
+        content:attr(class);
+        color:blue;
+    }
+    p::after{
+        content: attr(data-caption);
+        color: aqua;
+    }
+    textarea{
+        resize: none;
+        caret-color: aquamarine;
+    }
+    </style>
+</head>
+<body>
+    <!-- <p class="test" data-caption="Ullah">Hey Safi</p>
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum.</p>
+
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum.</p>
+
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum.</p>
+
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum.</p>
+        
+    <h2>Lorem, ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eum.</p> -->
+    <form >
+        <label >First Name</label>
+        <input type="text" placeholder=".">
+        <br><br>
+        <label>Last Name</label>
+        <input type="text" placeholder=".">
+        <br><br>
+        <label>Age</label>
+        <input type="number" placeholder=".">
+        <br><br>
+        <label>Email</label>
+        <input type="email" placeholder=".">
+        <br><br>
+        <label >Hobbies</label>
+        <textarea name="Hobbies" id="" cols="30" rows="10" title="no" ></textarea>
+    </form>
+</body>
+</html>
